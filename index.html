@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>The title</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+  
+  <!--
+  <div id='profile'>
+    <img id='pictureUrl'></img>
+    <h1 id='displayName'></h1>
+    <h1 id='userId'></h1>
+  </div>
+-->
+
+  <div id='createProfile' class='hidden'>
+
+    <div>
+      <p>คุณยังไม่มีชื่อในฐานข้อมูล กรอกข้อมูลด้านล่าง</p>
+    </div>
+
+    <div>
+    <p>คุณเป็นพนักงานเปลใช่หรือไม่</p>
+    <input type="radio" id="isStretcherBearer" name="stretcherBearer" value="1" onclick="showHideElement('ward','name')" checked>
+    <label for="isStretcherBearer">ใช่</label><br>
+    <input type="radio" id="notStretcherBearer" name="stretcherBearer" value="0" onclick="showHideElement('name','ward')">
+    <label for="notStretcherBearer">ไม่ใช่</label>
+    </div>
+
+    <div id="ward" class="hidden">
+      <div>
+      <p>Ward ที่ทำงานอยู่</p>
+      </div>
+
+      <div>
+      <input type="text">
+      </div>
+    </div>
+
+    <div id="name">
+      <div>
+        <p>ชื่อ-นามสกุล</p>
+      </div>
+
+      <div>
+      <input type="text">
+      </div>
+    <div>
+
+  </div>
+
+  <script>
+    function showHideElement(show,hide) {
+      document.getElementById(show).className = "show";
+      document.getElementById(hide).className = "hidden";
+    }
+  </script>
+
+</body>
+</html>

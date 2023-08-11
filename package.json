@@ -1,0 +1,10 @@
+{
+  "name": "js",
+  "version": "0.0.0",
+  "private": true,
+  "type": "module",
+  "dependencies": {
+    "@line/liff": "^2.22.2",
+    "firebase": "10.1.0"
+  }
+}
